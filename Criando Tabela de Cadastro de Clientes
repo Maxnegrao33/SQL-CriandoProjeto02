@@ -1,0 +1,26 @@
+-- Criando tabela de Clientes
+create table Clientes(
+idcliente int primary key auto_increment,
+nomecliente varchar(50) not null,
+rgcliente varchar(35),
+cpfcliente varchar(35),
+cnpjcliente varchar(35),
+endcliente varchar(100), 
+bairrocliente varchar(50),
+cidadecliente varchar(100),
+estadocliente varchar(2), 
+fonecliente varchar(50) not null,
+emailcliente varchar(50)
+); 
+
+--Para visualizar os campos da tabela
+describe Clientes;
+
+--Verificar a estrutura da tabela
+select * from Clientes;
+
+-- Inserindo instruções para verificação dos campos da tabela
+Insert into Clientes(nomecliente, rgcliente, cpfcliente, cnpjcliente, endcliente, bairrocliente, cidadecliente, estadocliente, fonecliente, emailcliente)
+values('Barack Obama', '4.578.654', '598.658.695-45', '', 'W Kinzie Street, 56, Apt 145', 'South Austin','Chicago', 'IL', '456 555-4587', 'obamapresusa@wh.gov.eu');
+
+
